@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <style>  
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2b2b2b;
+            color: #d4af37;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            flex-direction: column;
+        }
+        .home-icon {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 1.5em;
+            color: #d4af37;
+            text-decoration: none;
+            background-color: #3a3a3a;
+            padding: 10px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .home-icon:hover {
+            background-color: #d4af37;
+            color: #2b2b2b;
+        }
+        .nav {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 25px; 
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .nav-item {
+            background-color: #3a3a3a;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 1em;
+            color: #d4af37;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .nav-item:hover {
+            background-color: #d4af37;
+            color: #2b2b2b;
+        }
+        .title {
+            font-size: 3em;
+            font-weight: bold;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            margin-bottom: 20px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+        .info-box, .photo-box {
+            background-color: #3a3a3a;
+            border-radius: 10px;
+            padding: 20px;
+            color: #d4af37;
+            font-size: 1.2em;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .info-box {
+            width: 300px;
+        }
+        .photo-box {
+            width: 300px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .photo-box img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 10px;
+        }
+    </style>
+    </head>
+    <body>
+        <a href="index.html" class="home-icon" title="Volver al inicio">🏠</a>
+        <div class="nav">
+            <a href="Contactos.html" class="nav-item">Contactos</a>
+            <a href="Info.html" class="nav-item">Info</a>
+            <a href="CVV.html" class="nav-item">CVV</a>
+        </div>
+        <div class="title">Vicente Fernandez Martinez</div>
+        <div class="container">
+            <div class="info-box">
+                <h2>Información Personal</h2>
+                <p>Nombre: Vicente Fernández Martinez</p>
+                <p>Profesión: Estudiante de microinformatica</p>
+                <p>Ubicación: Valencia</p>
+            </div>
+            <div class="photo-box">
+                <img src="IMG/IMG_20241118_213927_211.webp" alt="Foto de perfil">
+            </div>
+        </div>
+</body>
+</html>
