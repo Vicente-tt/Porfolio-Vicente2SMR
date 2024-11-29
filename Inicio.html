@@ -20,7 +20,7 @@
         }
         .title {
             font-size: 3em;
-            font-family: 'Times New Roman', Times, serifx;
+            font-family: 'Times New Roman', Times, serif;
             font-weight: bold;
             margin: 0;
         }
@@ -42,7 +42,7 @@
             transform: translateY(-50%);
             display: flex;
             flex-direction: column;
-            gap: 25px; 
+            gap: 25px;
             font-family: 'Times New Roman', Times, serif;
         }
         .nav-item {
@@ -54,12 +54,10 @@
             text-decoration: none;
             text-align: center;
             transition: background-color 0.3s, color 0.3s;
-            
         }
         .nav-item:hover {
             background-color: #d4af37;
             color: #2b2b2b;
-            font-family: 'Times New Roman', Times, serif;
         }
         .home-icon {
             position: absolute;
@@ -80,6 +78,39 @@
             background-color: #d4af37;
             color: #2b2b2b;
         }
+    
+        @media (max-width: 600px) {
+            body {
+                flex-direction: column;
+                height: auto;
+                padding: 20px;
+            }
+            .title {
+                font-size: 2em;
+            }
+            .content-box {
+                width: 90%;
+                font-size: 0.9em;
+                padding: 15px;
+            }
+            .nav {
+                position: static;
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-around;
+                margin-top: 20px;
+            }
+            .nav-item {
+                font-size: 0.9em;
+                padding: 8px 15px;
+            }
+            .home-icon {
+                top: auto;
+                left: auto;
+                position: static;
+                margin-bottom: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -87,15 +118,13 @@
     <div class="title">Vicente Fernandez Martinez</div>
     <div class="content-box">
         <p>
-           Buenas soy Vicente y esta es mi proyecto final de APW de 2SMR, en esta pagina podeis ver varias paginas donde encontrareis informacion sobre mi, podeis ver el CVV tanto como por donde contactar conmigo y alguna informacion añadida (por mera curiosidad).
+           Buenas, soy Vicente y este es mi proyecto final de APW de 2SMR. En esta página podéis ver varias secciones: información sobre mí, el CVV, formas de contacto y algo de información adicional (por mera curiosidad).
         </p>
     </div>
     <div class="nav">
         <a href="Contactos.html" class="nav-item">Contactos</a>
         <a href="Info.html" class="nav-item">Info</a>
         <a href="Cvv.html" class="nav-item">CVV</a>
-        <link rel="icon" type="image/x-icon" href="IMG/hombre.png">
     </div>
 </body>
 </html>
-

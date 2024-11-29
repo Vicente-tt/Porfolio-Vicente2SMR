@@ -73,6 +73,7 @@
             justify-content: center;
             align-items: center;
             gap: 30px;
+            flex-wrap: wrap;
         }
         .info-box, .photo-box {
             background-color: #3a3a3a;
@@ -98,28 +99,57 @@
             max-height: 100%;
             border-radius: 10px;
         }
+
+        @media (max-width: 600px) {
+            body {
+                height: auto;
+                padding: 20px;
+            }
+            .title {
+                font-size: 2em;
+            }
+            .nav {
+                position: static;
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-around;
+                margin-top: 20px;
+            }
+            .nav-item {
+                font-size: 0.9em;
+                padding: 8px 15px;
+            }
+            .container {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .info-box, .photo-box {
+                width: 90%;
+            }
+            .photo-box {
+                height: auto;
+            }
+        }
     </style>
-    </head>
-    <body>
-        <a href="index.html" class="home-icon" title="Volver al inicio">🏠</a>
-        <div class="nav">
-            <a href="Contactos.html" class="nav-item">Contactos</a>
-            <a href="Info.html" class="nav-item">Info</a>
-            <a href="Cvv.html" class="nav-item">CVV</a>
-            <link rel="icon" type="image/x-icon" href="IMG/hombre.png">
-            
+</head>
+<body>
+    <a href="index.html" class="home-icon" title="Volver al inicio">🏠</a>
+    <div class="nav">
+        <a href="Contactos.html" class="nav-item">Contactos</a>
+        <a href="Info.html" class="nav-item">Info</a>
+        <a href="Cvv.html" class="nav-item">CVV</a>
+    </div>
+    <div class="title">Vicente Fernandez Martinez</div>
+    <div class="container">
+        <div class="info-box">
+            <h2>Información Personal</h2>
+            <p>Nombre: Vicente Fernández Martinez</p>
+            <p>Profesión: Estudiante de microinformática</p>
+            <p>Ubicación: Valencia</p>
         </div>
-        <div class="title">Vicente Fernandez Martinez</div>
-        <div class="container">
-            <div class="info-box">
-                <h2>Información Personal</h2>
-                <p>Nombre: Vicente Fernández Martinez</p>
-                <p>Profesión: Estudiante de microinformatica</p>
-                <p>Ubicación: Valencia</p>
-            </div>
-            <div class="photo-box">
-                <img src="IMG/IMG_20241118_213927_211.webp" alt="Foto de perfil">
-            </div>
+        <div class="photo-box">
+            <img src="IMG/IMG_20241118_213927_211.webp" alt="Foto de perfil">
         </div>
+    </div>
 </body>
 </html>
